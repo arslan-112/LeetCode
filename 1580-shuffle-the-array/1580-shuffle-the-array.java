@@ -3,9 +3,9 @@ class Solution {
         int [] shuffled = new int[nums.length];
         for(int i=0, j = 0;i<nums.length;i++){
             if(i%2 == 0){
-                shuffled[i] = nums[j++]; 
+                shuffled[i] = nums[j]; j++;
             }else{
-                shuffled[i] = nums[n++]; 
+                shuffled[i] = nums[n]; n++;
             }
                 
         }
