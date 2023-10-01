@@ -1,9 +1,8 @@
 class Solution {
     public int[] shuffle(int[] nums, int n) {
-        int size = nums.length;
-        int [] shuffled = new int[size];
-        int j = 0;
-        for(int i=0;i<size;i++){
+        int [] shuffled = new int[nums.length];
+        
+        for(int i=0, j = 0;i<nums.length;i++){
             if(i%2 == 0){
                 shuffled[i] = nums[j]; j++;
             }else{
