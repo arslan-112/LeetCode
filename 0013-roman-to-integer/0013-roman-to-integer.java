@@ -19,13 +19,14 @@ class Solution {
         int num = 0;
         int prev = 0;
         for(int i =0; i<ch.length;i++){
-            if(checkSymbol(ch[i]) > prev){
-                num += checkSymbol(ch[i]) - prev;
+            int curr = checkSymbol(ch[i]);
+            if(curr > prev){
+                num += curr - prev;
                 num -= prev;
             }
             else 
-                num += checkSymbol(ch[i]);
-            prev = checkSymbol(ch[i]);
+                num += curr;
+            prev = curr;
         }
         return num;
 
