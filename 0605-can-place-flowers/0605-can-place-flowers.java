@@ -19,8 +19,6 @@ class Solution {
             
             }
         }
-        if(n == 0)
-            return true;
-        return false;
+        return (n==0);
         }
     }
