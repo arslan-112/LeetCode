@@ -5,13 +5,10 @@ class Solution {
             if(i%2 != 0)
                 ans[i] = ans[i-1] +1;
             else{
-            int j = i;
-            while(j>0){
-                ans[i] += j%2;
-                j/= 2;
+                ans[i] = ans[i/2];
             }
         }
-        }
+        
         return ans;
     }
 }
