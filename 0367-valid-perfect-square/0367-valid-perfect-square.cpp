@@ -6,7 +6,7 @@ public:
 
         while(start <= end)
         {
-            long long mid = start + (end - start) / 2;
+            long mid = start + (end - start) / 2;
 
             if(mid * mid == num)
             return true;
